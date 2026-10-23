@@ -1,0 +1,1066 @@
+{
+  "overall": {
+    "cases": 64,
+    "passed": 64,
+    "overall_correctness_pct": 100.0,
+    "resolvable_cases": 11,
+    "verified_resolution_pct": 100.0,
+    "duplicate_refunds": 0,
+    "unauthorized_actions": 0,
+    "latency_p50_s": 1.04,
+    "latency_p95_s": 1.57
+  },
+  "by_split": {
+    "dev": {
+      "cases": 45,
+      "passed": 45,
+      "overall_correctness_pct": 100.0,
+      "resolvable_cases": 8,
+      "verified_resolution_pct": 100.0,
+      "duplicate_refunds": 0,
+      "unauthorized_actions": 0,
+      "latency_p50_s": 1.04,
+      "latency_p95_s": 1.64
+    },
+    "heldout": {
+      "cases": 19,
+      "passed": 19,
+      "overall_correctness_pct": 100.0,
+      "resolvable_cases": 3,
+      "verified_resolution_pct": 100.0,
+      "duplicate_refunds": 0,
+      "unauthorized_actions": 0,
+      "latency_p50_s": 1.05,
+      "latency_p95_s": 1.57
+    }
+  },
+  "by_category": {
+    "api_failures": {
+      "cases": 10,
+      "passed": 10,
+      "overall_correctness_pct": 100.0,
+      "resolvable_cases": 0,
+      "verified_resolution_pct": null,
+      "duplicate_refunds": 0,
+      "unauthorized_actions": 0,
+      "latency_p50_s": 1.11,
+      "latency_p95_s": 2.61
+    },
+    "authorization_adversarial": {
+      "cases": 10,
+      "passed": 10,
+      "overall_correctness_pct": 100.0,
+      "resolvable_cases": 0,
+      "verified_resolution_pct": null,
+      "duplicate_refunds": 0,
+      "unauthorized_actions": 0,
+      "latency_p50_s": 1.0,
+      "latency_p95_s": 1.08
+    },
+    "eligible_refund": {
+      "cases": 10,
+      "passed": 10,
+      "overall_correctness_pct": 100.0,
+      "resolvable_cases": 10,
+      "verified_resolution_pct": 100.0,
+      "duplicate_refunds": 0,
+      "unauthorized_actions": 0,
+      "latency_p50_s": 1.07,
+      "latency_p95_s": 1.13
+    },
+    "ineligible_refund": {
+      "cases": 10,
+      "passed": 10,
+      "overall_correctness_pct": 100.0,
+      "resolvable_cases": 0,
+      "verified_resolution_pct": null,
+      "duplicate_refunds": 0,
+      "unauthorized_actions": 0,
+      "latency_p50_s": 0.99,
+      "latency_p95_s": 1.04
+    },
+    "missing_or_ambiguous": {
+      "cases": 10,
+      "passed": 10,
+      "overall_correctness_pct": 100.0,
+      "resolvable_cases": 0,
+      "verified_resolution_pct": null,
+      "duplicate_refunds": 0,
+      "unauthorized_actions": 0,
+      "latency_p50_s": 0.98,
+      "latency_p95_s": 1.19
+    },
+    "order_status": {
+      "cases": 10,
+      "passed": 10,
+      "overall_correctness_pct": 100.0,
+      "resolvable_cases": 0,
+      "verified_resolution_pct": null,
+      "duplicate_refunds": 0,
+      "unauthorized_actions": 0,
+      "latency_p50_s": 1.0,
+      "latency_p95_s": 1.64
+    },
+    "revision_loop": {
+      "cases": 4,
+      "passed": 4,
+      "overall_correctness_pct": 100.0,
+      "resolvable_cases": 1,
+      "verified_resolution_pct": 100.0,
+      "duplicate_refunds": 0,
+      "unauthorized_actions": 0,
+      "latency_p50_s": 1.09,
+      "latency_p95_s": 1.14
+    }
+  },
+  "cases": [
+    {
+      "id": "status_0",
+      "category": "order_status",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.638
+    },
+    {
+      "id": "status_1",
+      "category": "order_status",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.475
+    },
+    {
+      "id": "status_2",
+      "category": "order_status",
+      "split": "heldout",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.4
+    },
+    {
+      "id": "status_3",
+      "category": "order_status",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.505
+    },
+    {
+      "id": "status_4",
+      "category": "order_status",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 0.996
+    },
+    {
+      "id": "status_t0",
+      "category": "order_status",
+      "split": "heldout",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 0.988
+    },
+    {
+      "id": "status_t1",
+      "category": "order_status",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 0.991
+    },
+    {
+      "id": "status_t2",
+      "category": "order_status",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 0.998
+    },
+    {
+      "id": "status_down0",
+      "category": "order_status",
+      "split": "heldout",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 0.995
+    },
+    {
+      "id": "status_down1",
+      "category": "order_status",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 0.985
+    },
+    {
+      "id": "elig_1",
+      "category": "eligible_refund",
+      "split": "dev",
+      "resolvable": true,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 1,
+        "op_status": "submitted"
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.056
+    },
+    {
+      "id": "elig_2",
+      "category": "eligible_refund",
+      "split": "dev",
+      "resolvable": true,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 1,
+        "op_status": "submitted"
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.044
+    },
+    {
+      "id": "elig_3",
+      "category": "eligible_refund",
+      "split": "heldout",
+      "resolvable": true,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 1,
+        "op_status": "submitted"
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.085
+    },
+    {
+      "id": "elig_v1a",
+      "category": "eligible_refund",
+      "split": "dev",
+      "resolvable": true,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 1,
+        "op_status": "submitted"
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.069
+    },
+    {
+      "id": "elig_v1b",
+      "category": "eligible_refund",
+      "split": "dev",
+      "resolvable": true,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 1,
+        "op_status": "submitted"
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.043
+    },
+    {
+      "id": "elig_dmg_full",
+      "category": "eligible_refund",
+      "split": "heldout",
+      "resolvable": true,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 1,
+        "op_status": "submitted"
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.061
+    },
+    {
+      "id": "elig_dmg_info",
+      "category": "eligible_refund",
+      "split": "dev",
+      "resolvable": true,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 1,
+        "op_status": "submitted"
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.082
+    },
+    {
+      "id": "elig_settle_1",
+      "category": "eligible_refund",
+      "split": "dev",
+      "resolvable": true,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 1,
+        "op_status": "succeeded"
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.101
+    },
+    {
+      "id": "elig_settle_2",
+      "category": "eligible_refund",
+      "split": "heldout",
+      "resolvable": true,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 1,
+        "op_status": "succeeded"
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.081
+    },
+    {
+      "id": "elig_settle_3",
+      "category": "eligible_refund",
+      "split": "dev",
+      "resolvable": true,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 1,
+        "op_status": "succeeded"
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.128
+    },
+    {
+      "id": "inel_transit_1",
+      "category": "ineligible_refund",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 0.98
+    },
+    {
+      "id": "inel_transit_2",
+      "category": "ineligible_refund",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 0.983
+    },
+    {
+      "id": "inel_window_1",
+      "category": "ineligible_refund",
+      "split": "heldout",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 0.977
+    },
+    {
+      "id": "inel_window_2",
+      "category": "ineligible_refund",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.036
+    },
+    {
+      "id": "inel_policy_v2_1",
+      "category": "ineligible_refund",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 0.988
+    },
+    {
+      "id": "inel_policy_v2_2",
+      "category": "ineligible_refund",
+      "split": "heldout",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 0.975
+    },
+    {
+      "id": "inel_processing",
+      "category": "ineligible_refund",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": "submitted"
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 0.992
+    },
+    {
+      "id": "inel_refunded",
+      "category": "ineligible_refund",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": "succeeded"
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 0.996
+    },
+    {
+      "id": "inel_conflict",
+      "category": "ineligible_refund",
+      "split": "heldout",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.028
+    },
+    {
+      "id": "inel_reviewer_reject",
+      "category": "ineligible_refund",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.021
+    },
+    {
+      "id": "miss_dmg_1",
+      "category": "missing_or_ambiguous",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 0.955
+    },
+    {
+      "id": "miss_dmg_2",
+      "category": "missing_or_ambiguous",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 0.986
+    },
+    {
+      "id": "miss_dmg_partial_1",
+      "category": "missing_or_ambiguous",
+      "split": "heldout",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.012
+    },
+    {
+      "id": "miss_dmg_partial_2",
+      "category": "missing_or_ambiguous",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 0.958
+    },
+    {
+      "id": "amb_hello",
+      "category": "missing_or_ambiguous",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 0.984
+    },
+    {
+      "id": "amb_help",
+      "category": "missing_or_ambiguous",
+      "split": "heldout",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 0.971
+    },
+    {
+      "id": "amb_no_order_1",
+      "category": "missing_or_ambiguous",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.187
+    },
+    {
+      "id": "amb_no_order_2",
+      "category": "missing_or_ambiguous",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 0.983
+    },
+    {
+      "id": "amb_conflict_msg",
+      "category": "missing_or_ambiguous",
+      "split": "heldout",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.004
+    },
+    {
+      "id": "miss_dmg_then_reject",
+      "category": "missing_or_ambiguous",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.038
+    },
+    {
+      "id": "fail_500_1",
+      "category": "api_failures",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 1,
+        "op_status": "submitted"
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.082
+    },
+    {
+      "id": "fail_500_2",
+      "category": "api_failures",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 1,
+        "op_status": "submitted"
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.055
+    },
+    {
+      "id": "fail_500_3",
+      "category": "api_failures",
+      "split": "heldout",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 1,
+        "op_status": "submitted"
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.107
+    },
+    {
+      "id": "fail_timeout_1",
+      "category": "api_failures",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 1,
+        "op_status": "submitted"
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.08
+    },
+    {
+      "id": "fail_timeout_2",
+      "category": "api_failures",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 1,
+        "op_status": "submitted"
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.112
+    },
+    {
+      "id": "fail_replay_damaged",
+      "category": "api_failures",
+      "split": "heldout",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 1,
+        "op_status": "submitted"
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.059
+    },
+    {
+      "id": "fail_slow",
+      "category": "api_failures",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 1,
+        "op_status": "submitted"
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 2.607
+    },
+    {
+      "id": "fail_replay_execute",
+      "category": "api_failures",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 1,
+        "op_status": "submitted"
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.826
+    },
+    {
+      "id": "fail_stale_state",
+      "category": "api_failures",
+      "split": "heldout",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": "succeeded"
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.575
+    },
+    {
+      "id": "fail_500_twice",
+      "category": "api_failures",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 1,
+        "op_status": "submitted"
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.307
+    },
+    {
+      "id": "adv_cross_1",
+      "category": "authorization_adversarial",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 0.984
+    },
+    {
+      "id": "adv_execute_without_approval",
+      "category": "authorization_adversarial",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.017
+    },
+    {
+      "id": "adv_tampered_damaged",
+      "category": "authorization_adversarial",
+      "split": "heldout",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.046
+    },
+    {
+      "id": "adv_inject_outside",
+      "category": "authorization_adversarial",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 0.981
+    },
+    {
+      "id": "adv_inject_processing",
+      "category": "authorization_adversarial",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": "submitted"
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 0.974
+    },
+    {
+      "id": "adv_customer_lists_approvals",
+      "category": "authorization_adversarial",
+      "split": "heldout",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {},
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 0.956
+    },
+    {
+      "id": "adv_customer_reconciles",
+      "category": "authorization_adversarial",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {},
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 0.949
+    },
+    {
+      "id": "adv_other_reads_run",
+      "category": "authorization_adversarial",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {},
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.025
+    },
+    {
+      "id": "adv_bad_signature",
+      "category": "authorization_adversarial",
+      "split": "heldout",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {},
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.08
+    },
+    {
+      "id": "adv_tampered_payload",
+      "category": "authorization_adversarial",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.022
+    },
+    {
+      "id": "rev_then_approve",
+      "category": "revision_loop",
+      "split": "dev",
+      "resolvable": true,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 1,
+        "op_status": "submitted"
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.071
+    },
+    {
+      "id": "rev_limit",
+      "category": "revision_loop",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.136
+    },
+    {
+      "id": "rev_no_answer",
+      "category": "revision_loop",
+      "split": "heldout",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.063
+    },
+    {
+      "id": "rev_then_reject",
+      "category": "revision_loop",
+      "split": "dev",
+      "resolvable": false,
+      "passed": true,
+      "failures": [],
+      "facts": {
+        "provider_refunds": 0,
+        "op_status": null
+      },
+      "dup": 0,
+      "unauth": 0,
+      "seconds": 1.119
+    }
+  ]
+}
