@@ -1,4 +1,6 @@
-# Support Resolution Agent (V1)
+﻿# Support Resolution Agent (V1)
+
+[![tests](https://github.com/AiswariyaPattanayak/support-resolution-agent/actions/workflows/tests.yml/badge.svg)](https://github.com/AiswariyaPattanayak/support-resolution-agent/actions)
 
 Complaint -> verified outcome, for a fictional electronics retailer. Python, LangGraph, FastAPI, SQLAlchemy (SQLite by default, PostgreSQL supported).
 
@@ -25,14 +27,14 @@ In: one store, one currency (INR, integer paise), order status, refund request, 
 Out: chargebacks, fraud adjudication, partial returns, real email/SMS, multi-issue workflows, production claims. All data is synthetic.
 
 ## Design rules
-- **Model proposes, code decides.** Eligibility is `app/eligibility.py` (pure, table-tested). Customer replies are templates keyed on verified state (`app/replies.py`) and a verifier rejects any ₹ amount not found in state.
+- **Model proposes, code decides.** Eligibility is `app/eligibility.py` (pure, table-tested). Customer replies are templates keyed on verified state (`app/replies.py`) and a verifier rejects any â‚¹ amount not found in state.
 - **Identity** comes from the JWT; order ownership is checked in the service layer. Foreign and non-existent orders look identical.
 - **Approval** is a stored record bound to a SHA-256 of the exact proposal payload; the graph reads the decision from the DB, never from the resume payload. Tampering or expiry blocks execution.
 - **Refund safety** (`app/refunds.py`): verify approval, lock the order row, revalidate, insert a refund operation with a unique idempotency key (reserve), commit, then call the provider. Uncertain results become `unknown` and are resolved by key via `/refund-operations/{id}/reconcile`, never a blind retry.
 - **Honest wording:** `submitted` != `succeeded` != `unknown` in every reply.
 
 ## Layout
-`app/` API, graph, services · `mock_services/payments/` provider with idempotency contract + failure modes (`/admin/mode`: `normal|slow|error_500|timeout_after_accept`) · `tests/` scenario evals · `scripts/demo.py`
+`app/` API, graph, services Â· `mock_services/payments/` provider with idempotency contract + failure modes (`/admin/mode`: `normal|slow|error_500|timeout_after_accept`) Â· `tests/` scenario evals Â· `scripts/demo.py`
 
 ## Known limitations (read before claiming results)
 - Schema is created with `create_all`; **no Alembic migrations yet**.
